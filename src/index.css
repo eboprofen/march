@@ -1,13 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  @font-face {
+    font-family: "Black";
+    src: url(../public/fonts/ZonaPro-Black.ttf);
+  }
+  @font-face {
+    font-family: "Bold";
+    src: url(../public/fonts/ZonaPro-Bold.ttf);
+  }
+  @font-face {
+    font-family: "Light";
+    src: url(../public/fonts/ZonaPro-Light.ttf);
+  }
+  @font-face {
+    font-family: "Regular";
+    src: url(../public/fonts/ZonaPro-Regular.ttf);
+  }
+  @font-face {
+    font-family: "SemiBold";
+    src: url(../public/fonts/ZonaPro-SemiBold.ttf);
+  }
+  @font-face {
+    font-family: "Thin";
+    src: url(../public/fonts/ZonaPro-Thin.ttf);
+  }
+}
+
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  background-color: #33363b;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
